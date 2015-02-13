@@ -8,7 +8,7 @@
 (require '[adzerk.bootlaces :refer :all]
          '[tailrecursion.boot-hoplon :refer :all])
 
-(def +version+ "0.1.0-0")
+(def +version+ "0.1.0")
 
 (task-options!
  pom  {:project     'hoplon/hoplon-google-loader
