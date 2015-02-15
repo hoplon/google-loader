@@ -11,10 +11,10 @@
 (def +version+ "0.1.0")
 
 (task-options!
- pom  {:project     'hoplon/hoplon-google-loader
+ pom  {:project     'hoplon/google-loader
        :version     +version+
        :description "hoplon wrapper for google loader"
        :url         "https://developers.google.com/maps/documentation/javascript/"
-       :scm         {:url "https://github.com/hoplon/hoplon-google-loader.git"}
+       :scm         {:url "https://github.com/hoplon/google-loader.git"}
        :license     {"" ""}})
 
