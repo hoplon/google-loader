@@ -1,14 +1,13 @@
 (set-env!
   :resource-paths #{"src"}
-  :dependencies '[[boot/core                  "2.0.0-rc9"     :scope "provided"]
-                  [adzerk/bootlaces           "0.1.9"         :scope "test"]
-                  [tailrecursion/boot-hoplon  "0.1.0"         :scope "test"]
-                  [tailrecursion/hoplon       "6.0.0-SNAPSHOT"]])
+  :dependencies '[[adzerk/bootlaces   "0.1.12"        :scope "test"]
+                  [hoplon/boot-hoplon "0.1.9"         :scope "test"]
+                  [hoplon             "6.0.0-alpha10"]])
 
 (require '[adzerk.bootlaces :refer :all]
-         '[tailrecursion.boot-hoplon :refer :all])
+         '[hoplon.boot-hoplon :refer :all])
 
-(def +version+ "0.1.0")
+(def +version+ "0.2.0-SNAPSHOT")
 
 (task-options!
  pom  {:project     'hoplon/google-loader
