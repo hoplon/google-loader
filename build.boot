@@ -7,7 +7,7 @@
 (require '[adzerk.bootlaces :refer :all]
          '[hoplon.boot-hoplon :refer :all])
 
-(def +version+ "0.2.0-SNAPSHOT")
+(def +version+ "0.2.0")
 
 (task-options!
  pom  {:project     'hoplon/google-loader
