@@ -1,7 +1,9 @@
-(ns hoplon.google.jsapi.loader)
+(ns hoplon.google.jsapi.loader
+  (:require [hoplon.core  :as h]
+            [javelin.core :as j]))
 
-(defc  api-key nil)
-(defc= api-url (str "https://www.google.com/jsapi?key=" api-key))
+(j/defc  api-key nil)
+(j/defc= api-url (str "https://www.google.com/jsapi?key=" api-key))
 
 (defn queued [load-fn]
   (let [callbacks (atom [])
@@ -18,4 +20,4 @@
 (def ensure-api
   (queued
     (fn [callback]
-      (with-init! (.getScript js/jQuery @api-url callback)))))
+      (h/with-init! (.getScript js/jQuery @api-url callback)))))

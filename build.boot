@@ -1,11 +1,9 @@
 (set-env!
   :resource-paths #{"src"}
-  :dependencies '[[adzerk/bootlaces   "0.1.12"        :scope "test"]
-                  [hoplon/boot-hoplon "0.1.9"         :scope "test"]
-                  [hoplon             "6.0.0-alpha10"]])
+  :dependencies '[[adzerk/bootlaces "0.1.12"        :scope "test"]
+                  [hoplon           "6.0.0-alpha10"]])
 
-(require '[adzerk.bootlaces :refer :all]
-         '[hoplon.boot-hoplon :refer :all])
+(require '[adzerk.bootlaces :refer :all])
 
 (def +version+ "0.2.0")
 
